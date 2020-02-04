@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+    <item
+        android:id="@+id/action_one"
+        android:icon="@color/bottom_navigation_item_news"
+        android:title="Новости"/>
+    <item
+        android:id="@+id/action_two"
+        android:icon="@color/bottom_navigation_item_map"
+        android:title="Карта"/> />
+    <item
+        android:id="@+id/action_three"
+        android:icon="@color/bottom_navigation_item_favorites"
+        android:title="Избранное"/>
+    <item
+        android:id="@+id/action_four"
+        android:icon="@color/bottom_navigation_item_my_orders"
+        android:title="Мои заказы"/>
+
+</menu>

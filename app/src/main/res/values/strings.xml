@@ -1,0 +1,13 @@
+<resources>
+    <string name="app_name">Brosco</string>
+
+    <string name="forgot_password"><u>Забыл пароль?</u></string>
+    <string name="enter_without_registration"><u>Войти без регистрации</u></string>
+    <string name="no_account">У вас нет аккаунта?</string>
+    <string name="to_register"><u>Зарегистрироваться</u></string>
+    <string name="title_activity_maps_">Map</string>
+
+    <string name="favorites_text">Добавляйте любимые\nкофейни в\nизбранное</string>
+
+
+</resources>

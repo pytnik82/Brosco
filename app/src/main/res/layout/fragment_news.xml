@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    style="@style/Theme.AppCompat"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <ImageView
+        android:id="@+id/iv_news_logo"
+        android:layout_width="match_parent"
+        android:layout_height="90dp"
+        android:layout_alignParentTop="true"
+        android:scaleType="fitXY"
+        android:src="@drawable/news_heading" />
+
+    <TextView
+        android:id="@+id/tv_best_offers"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/iv_news_logo"
+        android:layout_marginLeft="@dimen/inner_frame"
+        android:layout_marginTop="32dp"
+        android:letterSpacing="0.05"
+        android:text="Лучьшие предложения"
+        android:textColor="@color/dark_grey"
+        android:textSize="16sp"
+        android:textStyle="bold" />
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/rv_best_offers"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/tv_best_offers"
+        android:scrollbarSize="2dp"
+        android:scrollbars="horizontal"
+        tools:listitem="@layout/item_best_deal" />
+
+    <TextView
+        android:id="@+id/tv_best_coffee"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/rv_best_offers"
+        android:layout_marginLeft="@dimen/inner_frame"
+        android:layout_marginTop="8dp"
+        android:letterSpacing="0.05"
+        android:text="Самый популярный кофе"
+        android:textColor="@color/dark_grey"
+        android:textSize="16sp"
+        android:textStyle="bold" />
+
+    <ImageView
+        android:layout_width="wrap_content"
+        android:layout_height="18dp"
+        android:layout_alignBottom="@id/tv_best_coffee"
+        android:layout_alignParentRight="true"
+        android:src="@drawable/yet" />
+
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/rv_best_coffee"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/tv_best_coffee"
+        android:layout_marginTop="8dp"
+        android:scrollbarSize="2dp"
+        android:scrollbars="vertical"
+        tools:listitem="@layout/item_best_coffee" />
+
+
+</RelativeLayout>

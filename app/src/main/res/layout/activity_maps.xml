@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:map="http://schemas.android.com/apk/res-auto">
+
+    <TextView
+        android:id="@+id/tv_map"
+        android:layout_width="match_parent"
+        android:layout_height="80dp"
+        android:background="@color/colorAccent"
+        android:gravity="top|center"
+        android:text="Карта"
+        android:textColor="@color/white"
+        android:textSize="30sp"
+        android:textStyle="bold" />
+
+    <EditText
+        android:id="@+id/edt_map_search"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignBottom="@id/tv_map"
+        android:layout_margin="8dp"
+        android:background="@drawable/frame_edt_purple"
+        android:hint="Поиск..."
+        android:lines="1"
+        android:paddingLeft="16dp"
+        android:paddingRight="32dp"
+        android:paddingBottom="2dp"
+        android:textColor="@color/white"
+        android:textSize="18sp"
+        android:textColorHint="@color/colorAccentLight" />
+
+    <ImageView
+        android:layout_width="24dp"
+        android:layout_height="24dp"
+        android:src="@android:drawable/ic_menu_search"
+        android:layout_alignBottom="@id/edt_map_search"
+        android:layout_alignRight="@id/edt_map_search"
+        android:layout_marginRight="8dp"/>
+
+    <fragment
+        android:id="@+id/map"
+        android:name="com.google.android.gms.maps.SupportMapFragment"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@id/tv_map"
+        map:cameraBearing="45"
+        map:cameraTargetLat="55.753960"
+        map:cameraTargetLng="37.620393"
+        map:cameraTilt="30"
+        map:cameraZoom="12"
+        map:mapType="normal"
+        map:uiCompass="true"
+        map:uiRotateGestures="true"
+        map:uiScrollGestures="true"
+        map:uiTiltGestures="true"
+        map:uiZoomControls="true"
+        map:uiZoomGestures="true"
+        tools:context=".MapsActivity" />
+
+</RelativeLayout>
